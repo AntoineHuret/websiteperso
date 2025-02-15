@@ -1,10 +1,10 @@
 import Image from "next/image"
-import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
+import { Card } from "@/app/components/ui/card"
+import { Badge } from "@/app//components/ui/badge"
+import { Button } from "@/app//components/ui/button"
 import { ArrowDown, Mail, MapPin, Phone } from "lucide-react"
-import Header from "@/components/Header"
-import { ExperienceCard } from "@/components/ExperienceCard"
+import Header from "@/app//components/Header"
+import { ExperienceCard } from "@/app/components/ExperienceCard"
 
 export default function Home() {
   return (
@@ -191,4 +191,3 @@ export default function Home() {
     </>
   )
 }
-
