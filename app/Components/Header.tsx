@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "@/app/components/ui/button"
 
 const Header = () => {
   return (
@@ -26,4 +26,3 @@ const Header = () => {
 }
 
 export default Header
-

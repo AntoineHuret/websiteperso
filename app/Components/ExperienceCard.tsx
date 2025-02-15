@@ -1,6 +1,6 @@
 import Image from "next/image"
-import { Card } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import { Card } from "@/app/components/ui/card"
+import { Badge } from "@/app/components/ui/badge"
 import { ExternalLink } from "lucide-react"
 
 interface ExperienceCardProps {
@@ -55,4 +55,3 @@ export function ExperienceCard({ title, company, period, description, image, url
     </Card>
   )
 }
-
