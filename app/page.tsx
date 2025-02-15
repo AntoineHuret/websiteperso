@@ -1,9 +1,9 @@
 import Image from "next/image"
 import { Card } from "@/app/components/ui/card"
-import { Badge } from "@/app//components/ui/badge"
-import { Button } from "@/app//components/ui/button"
+import { Badge } from "@/app/components/ui/badge"
+import { Button } from "@/app/components/ui/button"
 import { ArrowDown, Mail, MapPin, Phone } from "lucide-react"
-import Header from "@/app//components/Header"
+import Header from "@/app/components/Header"
 import { ExperienceCard } from "@/app/components/ExperienceCard"
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
               Expert en Marketing Digital & Développement Web
             </h1>
             <p className="text-xl text-muted-foreground animate-fade-in-up delay-200">
-              +10 ans d'expérience en Growth, E-commerce et Développement Web
+              +10 ans d&apos;expérience en Growth, E-commerce et Développement Web
             </p>
             <Button className="bg-primary hover:bg-primary/90 animate-fade-in-up delay-300" size="lg">
               Voir mes projets
@@ -97,7 +97,7 @@ export default function Home() {
               <ExperienceCard
                 title="HEAD OF GROWTH & ACQUISITION"
                 company="COOPLEO.care"
-                period="Jan. 2024 – Aujourd'hui"
+                period="Jan. 2024 – Aujourd&apos;hui"
                 description="Conseil en stratégie et test du Product Market Fit. Responsable growth (AARRR) : SEO, SEA, Réseaux sociaux, CRM."
                 image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/coopleo.jpg-ZT5MryZJU5eaO49ck1otd2UuGPxrkc.jpeg"
                 url="https://www.coopleo.care"
@@ -108,7 +108,7 @@ export default function Home() {
                 title="DIRECTEUR E-COMMERCE"
                 company="Le Masque Français"
                 period="Sept. 2022 – Dec. 2023"
-                description="Lancement du site Ecommerce durant la pandémie de COVID. Responsable du site (Shopify) de l'acquisition et du CRO."
+                description="Lancement du site Ecommerce durant la pandémie de COVID. Responsable du site (Shopify) de l&apos;acquisition et du CRO."
                 image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/le%20masque%20francais-wtSHzxLRHQhjvyyDVnrXrDpa0Dqjxl.webp"
                 url="https://getlemasquefrancais.com"
                 technologies={["Shopify", "E-commerce", "CRO", "Marketing"]}
@@ -128,7 +128,7 @@ export default function Home() {
                 title="DIGITAL MARKETING MANAGER"
                 company="BMW"
                 period="2019 – 2020"
-                description="Challenge de l'agence média et coach de l'équipe Media Digital : KPIs, analyses & reporting."
+                description="Challenge de l&apos;agence média et coach de l&apos;équipe Media Digital : KPIs, analyses & reporting."
                 image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/bmw-CeaE8QtkbvZGhSFNvZNHeFd97PkAwV.webp"
                 url="https://www.bmw.fr"
                 technologies={["Media", "Analytics", "Reporting", "Team Management"]}
@@ -138,7 +138,7 @@ export default function Home() {
                 title="DIGITAL MARKETING MANAGER"
                 company="Disneyland Paris"
                 period="2018 – 2019"
-                description="Responsable de l'analyse de l'expérience utilisateur et coach de l'équipe sur les analyses UX."
+                description="Responsable de l&apos;analyse de l&apos;expérience utilisateur et coach de l&apos;équipe sur les analyses UX."
                 image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/disney.jpg-TXZAQO4szpxwVzzoRguiHMCX8G5901.jpeg"
                 url="https://www.disneylandparis.com"
                 technologies={["UX", "Content Square", "Analytics", "CRO"]}
@@ -148,7 +148,7 @@ export default function Home() {
                 title="DIGITAL MARKETING MANAGER"
                 company="Nissan Europe"
                 period="2017 – 2018"
-                description="Management d'une équipe de 15 personnes. Analyse des performances médias pour le TOP Management."
+                description="Management d&apos;une équipe de 15 personnes. Analyse des performances médias pour le TOP Management."
                 image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/QashqaiDesktop_nov.jpg-YS3AQmM00JiGSt4zchQw729mh1RO15.jpeg"
                 url="https://www.nissan.fr"
                 technologies={["Team Management", "Media", "Analytics", "IA"]}
