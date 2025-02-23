@@ -16,7 +16,7 @@ export default function Home() {
           <div className="space-y-8 max-w-4xl">
             <div className="relative w-48 h-48 mx-auto mb-8 animate-fade-in">
               <Image
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/edited_image.jpg-9uG4bsrnyuxtr7gKWp8Llnh1kXXDYD.jpeg"
+                src="/profil.jpg"
                 alt="Antoine HURET"
                 fill
                 priority
