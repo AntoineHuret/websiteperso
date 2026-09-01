@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Antoine HURET — Lead Product Manager | eCommerce, UX & CRO",
     description:
-      "+10 ans d'expérience en marketing digital, e-commerce et CRO. Product Manager SaaS et développeur web full-stack certifié Le Wagon.",
+      "+10 ans d'expérience en marketing digital, e-commerce et CRO. Product Manager Marketplace et développeur web full-stack certifié Le Wagon.",
     url: "https://www.antoinehuret.com",
     siteName: "Antoine HURET",
     locale: "fr_FR",
