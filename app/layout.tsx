@@ -1,13 +1,36 @@
 import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import type React from "react" // Added import for React
+import type React from "react"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Antoine HURET - Expert en Marketing Digital",
-  description: "Portfolio professionnel d'Antoine HURET, expert en Marketing Digital avec plus de 10 ans d'expérience",
+  metadataBase: new URL("https://www.antoinehuret.com"),
+  title: "Antoine HURET — Product Manager | Growth & CRO",
+  description:
+    "Portfolio d'Antoine HURET, Product Manager spécialisé Growth, CRO et E-commerce. +10 ans d'expérience (Swatch, Nissan, Disneyland Paris, BMW, Carglass, Le Masque Français, Coopleo) et développeur web full-stack certifié Le Wagon.",
+  keywords: [
+    "Antoine Huret",
+    "Product Manager",
+    "Growth",
+    "CRO",
+    "E-commerce",
+    "Marketing Digital",
+    "SEO",
+    "SEA",
+    "Paris",
+  ],
+  openGraph: {
+    title: "Antoine HURET — Product Manager | Growth & CRO",
+    description:
+      "+10 ans d'expérience en Growth, CRO et E-commerce. Product Owner SaaS et développeur web full-stack certifié Le Wagon.",
+    url: "https://www.antoinehuret.com",
+    siteName: "Antoine HURET",
+    locale: "fr_FR",
+    type: "website",
+    images: [{ url: "/profil.jpg", width: 400, height: 400, alt: "Antoine HURET" }],
+  },
 }
 
 export default function RootLayout({
@@ -16,9 +39,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className="scroll-smooth">
       <body className={`${inter.className} bg-gray-50 text-gray-900`}>{children}</body>
     </html>
   )
 }
-
