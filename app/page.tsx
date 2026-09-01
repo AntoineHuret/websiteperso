@@ -38,8 +38,8 @@ export default function Home() {
             <p className="text-xl text-muted-foreground animate-fade-in-up delay-200 text-balance">
               +10 ans d&apos;expérience en marketing digital, e-commerce et CRO, en B2C et B2B2C — du conseil
               (BMW, Disneyland Paris, Nissan Europe) aux annonceurs (Swatch, Carglass, Le Masque Français).
-              Aujourd&apos;hui Product Manager SaaS chez Digisap Solutions, et développeur web full-stack
-              certifié Le Wagon (titre RNCP niveau 6).
+              Aujourd&apos;hui Product Manager Marketplace chez Digisap Solutions, et développeur web
+              full-stack certifié Le Wagon (titre RNCP niveau 6).
             </p>
             <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up delay-300">
               <Button className="bg-primary hover:bg-primary/90" size="lg" asChild>
@@ -102,7 +102,7 @@ export default function Home() {
                     <Badge variant="outline">Lead Product Manager Marketplace</Badge>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Badge variant="outline">Product Manager SaaS</Badge>
+                    <Badge variant="outline">Marketplace &amp; SaaS</Badge>
                   </li>
                   <li className="flex items-center gap-2">
                     <Badge variant="outline">No-code &amp; IA</Badge>
@@ -144,16 +144,17 @@ export default function Home() {
                 company="Accès SAP (Digisap Solutions)"
                 period="Aujourd'hui"
                 description="Acquisition B2C du leader français des coopératives de services à la personne (8 500 indépendants) : audit SEO technique complet de la plateforme de leads EntretienDeJardin.com, puis refonte intégrale du site par IA (Claude Code, CMS headless Sanity, GitHub) avec évolution vers une application à comptes utilisateurs. Pilotage SEA/ROAS et benchmark marketplace des acteurs B2C du secteur."
+                image="/images/acces-sap.webp"
                 technologies={["SEO", "Growth", "SEA", "IA", "Product"]}
               />
 
               <ExperienceCard
-                title="PRODUCT MANAGER SAAS"
+                title="PRODUCT MANAGER MARKETPLACE"
                 company="Digisap Solutions — CDI"
                 period="Sept. 2024 – Aujourd'hui"
-                description="Éditeur logiciel de solutions SaaS dédiées aux artisans, TPE & PME. Pilotage produit : discovery, roadmap, delivery et croissance."
+                description="Éditeur logiciel de solutions SaaS dédiées aux artisans, TPE & PME. Pilotage produit de la marketplace : discovery, roadmap, delivery et croissance."
                 image="/images/logicaps.webp"
-                technologies={["Product Management", "SaaS", "Roadmap", "Agile"]}
+                technologies={["Product Management", "Marketplace", "Roadmap", "Agile"]}
               />
 
               <ExperienceCard
