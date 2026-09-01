@@ -140,6 +140,14 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-12 text-center">Parcours</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <ExperienceCard
+                title="SEO & GROWTH"
+                company="Accès SAP (Digisap Solutions)"
+                period="Aujourd'hui"
+                description="Acquisition B2C du leader français des coopératives de services à la personne (8 500 indépendants) : audit SEO technique complet de la plateforme de leads EntretienDeJardin.com, puis refonte intégrale du site par IA (Claude Code, CMS headless Sanity, GitHub) avec évolution vers une application à comptes utilisateurs. Pilotage SEA/ROAS et benchmark marketplace des acteurs B2C du secteur."
+                technologies={["SEO", "Growth", "SEA", "IA", "Product"]}
+              />
+
+              <ExperienceCard
                 title="PRODUCT MANAGER SAAS"
                 company="Digisap Solutions — CDI"
                 period="Sept. 2024 – Aujourd'hui"
