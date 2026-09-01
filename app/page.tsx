@@ -144,6 +144,7 @@ export default function Home() {
                 company="Accès SAP (Digisap Solutions)"
                 period="Aujourd'hui"
                 description="Acquisition B2C du leader français des coopératives de services à la personne (8 500 indépendants) : audit SEO technique complet de la plateforme de leads EntretienDeJardin.com, puis refonte intégrale du site par IA (Claude Code, CMS headless Sanity, GitHub) avec évolution vers une application à comptes utilisateurs. Pilotage SEA/ROAS et benchmark marketplace des acteurs B2C du secteur."
+                image="/images/acces-sap.webp"
                 technologies={["SEO", "Growth", "SEA", "IA", "Product"]}
               />
 
