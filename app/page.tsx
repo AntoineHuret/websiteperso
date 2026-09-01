@@ -33,7 +33,7 @@ export default function Home() {
             </div>
             <div className="space-y-4">
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary animate-fade-in">
-                eCommerce · Growth · CRO
+                Acquisition · Conversion · Rétention
               </p>
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance animate-fade-in-up">
                 Lead Product Manager
