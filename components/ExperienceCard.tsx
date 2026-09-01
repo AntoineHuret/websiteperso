@@ -15,7 +15,7 @@ interface ExperienceCardProps {
 
 export function ExperienceCard({ title, company, period, description, image, url, technologies }: ExperienceCardProps) {
   return (
-    <Card className="group overflow-hidden flex flex-col">
+    <Card className="group h-full overflow-hidden flex flex-col transition-shadow duration-300 hover:shadow-xl">
       {image && (
         <div className="relative aspect-video overflow-hidden bg-muted">
           <Image
