@@ -33,17 +33,17 @@ export default function Home() {
             </div>
             <div className="space-y-4">
               <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary animate-fade-in">
-                Growth · CRO · Product
+                eCommerce · Growth · CRO
               </p>
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance animate-fade-in-up">
                 Lead Product Manager
-                <span className="block text-primary">Marketplace &amp; eCommerce</span>
+                <span className="block text-primary">Marketplace &amp; SaaS</span>
               </h1>
             </div>
-            <p className="text-xl text-muted-foreground animate-fade-in-up delay-200 text-balance max-w-3xl mx-auto">
-              +10 ans à faire croître des produits digitaux, de BMW et Disneyland Paris à Swatch et
-              Le Masque Français. Aujourd&apos;hui Product Manager Marketplace chez Digisap Solutions
-              et développeur full-stack : je construis autant que je pilote.
+            <p className="text-xl text-muted-foreground animate-fade-in-up delay-200 text-pretty max-w-3xl mx-auto">
+              Je conçois et fais grandir des expériences e-commerce qui convertissent. De BMW et
+              Disneyland Paris à Swatch et Le Masque Français. Aujourd&apos;hui chez Digisap Solutions,
+              développeur full-stack : je parle produit, business et code.
             </p>
             <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up delay-300">
               <Button className="bg-primary hover:bg-primary/90" size="lg" asChild>
