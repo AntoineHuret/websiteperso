@@ -2,12 +2,13 @@ import "./globals.css"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import type React from "react"
+import ScrollProgress from "@/components/ScrollProgress"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.antoinehuret.com"),
-  title: "Antoine HURET — Lead Product Manager | Marketplace, SaaS & eCommerce",
+  title: "Antoine HURET — Product Manager full-stack | Marketplace, SaaS & eCommerce",
   description:
     "Portfolio d'Antoine HURET, Lead Product Manager Marketplace. +10 ans d'expérience en marketing digital, e-commerce et CRO (Swatch, Nissan, Disneyland Paris, BMW, Carglass, Le Masque Français, Coopleo) et développeur web full-stack certifié Le Wagon.",
   keywords: [
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     "Paris",
   ],
   openGraph: {
-    title: "Antoine HURET — Lead Product Manager | Marketplace, SaaS & eCommerce",
+    title: "Antoine HURET — Product Manager full-stack | Marketplace, SaaS & eCommerce",
     description:
       "+10 ans d'expérience en marketing digital, e-commerce et CRO. Lead Product Manager Marketplace et développeur web full-stack certifié Le Wagon.",
     url: "https://www.antoinehuret.com",
@@ -42,7 +43,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr" className="scroll-smooth">
-      <body className={`${inter.className} bg-gray-50 text-gray-900`}>{children}</body>
+      <body className={`${inter.className} bg-gray-50 text-gray-900`}>
+        <ScrollProgress />
+        {children}
+      </body>
     </html>
   )
 }

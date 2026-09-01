@@ -6,6 +6,9 @@ import { ArrowDown, BadgeCheck, Github, GraduationCap, Linkedin, Mail, MapPin } 
 import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import { ExperienceCard } from "@/components/ExperienceCard"
+import Reveal from "@/components/Reveal"
+
+const domains = ["SaaS", "E-commerce", "Marketplace"]
 
 const stats = [
   { value: "+10 ans", label: "d'expérience digitale" },
@@ -20,15 +23,19 @@ export default function Home() {
       <Header />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section id="about" className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-20">
+        <section
+          id="about"
+          className="hero-glow min-h-screen flex flex-col items-center justify-center text-center px-4 py-20"
+        >
           <div className="space-y-8 max-w-4xl">
-            <div className="relative w-48 h-48 mx-auto mb-8 animate-fade-in">
+            <div className="avatar-ring relative w-44 h-44 mx-auto mb-8 rounded-full p-1 shadow-xl shadow-primary/20 animate-fade-in">
               <Image
                 src="/profil.jpg"
                 alt="Antoine HURET"
-                fill
+                width={176}
+                height={176}
                 priority
-                className="rounded-full object-cover"
+                className="h-full w-full rounded-full object-cover"
               />
             </div>
             <div className="space-y-4">
@@ -36,17 +43,27 @@ export default function Home() {
                 Acquisition · Conversion · Rétention
               </p>
               <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance animate-fade-in-up">
-                Lead Product Manager
-                <span className="block text-primary">Marketplace &amp; SaaS</span>
+                Product Manager
+                <span className="block text-primary">full-stack</span>
               </h1>
             </div>
             <p className="text-xl text-muted-foreground animate-fade-in-up delay-200 text-pretty max-w-3xl mx-auto">
-              Je conçois et fais grandir des expériences e-commerce qui convertissent. De BMW et
-              Disneyland Paris à Swatch et Le Masque Français. Aujourd&apos;hui chez Digisap Solutions,
-              développeur full-stack : je parle produit, business et code.
+              Je couvre l&apos;acquisition, le produit, la data et le code. +10 ans à faire grandir des
+              produits digitaux — BMW, Disneyland Paris, Swatch, Carglass. Aujourd&apos;hui chez Digisap
+              Solutions, je pilote la marketplace et sa croissance.
             </p>
+            <ul className="flex flex-wrap justify-center gap-3 animate-fade-in-up delay-200">
+              {domains.map((domain) => (
+                <li
+                  key={domain}
+                  className="rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary shadow-sm transition-colors hover:border-primary/40 hover:bg-primary/10"
+                >
+                  {domain}
+                </li>
+              ))}
+            </ul>
             <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up delay-300">
-              <Button className="bg-primary hover:bg-primary/90" size="lg" asChild>
+              <Button className="bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20" size="lg" asChild>
                 <a href="#experience">
                   Voir mon parcours
                   <ArrowDown className="ml-2 h-4 w-4" />
@@ -63,11 +80,13 @@ export default function Home() {
         <section className="py-16 bg-muted">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-              {stats.map((stat) => (
-                <div key={stat.value} className="text-center space-y-2">
-                  <p className="text-4xl font-bold text-primary">{stat.value}</p>
-                  <p className="text-sm text-muted-foreground text-balance">{stat.label}</p>
-                </div>
+              {stats.map((stat, i) => (
+                <Reveal key={stat.value} delay={i * 90}>
+                  <div className="text-center space-y-2">
+                    <p className="text-4xl font-bold text-primary">{stat.value}</p>
+                    <p className="text-sm text-muted-foreground text-balance">{stat.label}</p>
+                  </div>
+                </Reveal>
               ))}
             </div>
           </div>
@@ -76,9 +95,11 @@ export default function Home() {
         {/* Expertise Section */}
         <section className="py-24">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center">Expertises</h2>
+            <Reveal>
+              <h2 className="text-3xl font-bold mb-12 text-center">Expertises</h2>
+            </Reveal>
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="p-6 bg-white/50 backdrop-blur-sm">
+              <Reveal className="h-full"><Card className="h-full p-6 bg-white/60 backdrop-blur-sm transition-shadow duration-300 hover:shadow-lg">
                 <h3 className="text-xl font-semibold mb-4">Growth &amp; Marketing Digital</h3>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
@@ -97,9 +118,9 @@ export default function Home() {
                     <Badge variant="outline">Analytics &amp; Tracking (GTM)</Badge>
                   </li>
                 </ul>
-              </Card>
+              </Card></Reveal>
 
-              <Card className="p-6 bg-white/50 backdrop-blur-sm">
+              <Reveal delay={100} className="h-full"><Card className="h-full p-6 bg-white/60 backdrop-blur-sm transition-shadow duration-300 hover:shadow-lg">
                 <h3 className="text-xl font-semibold mb-4">Product</h3>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
@@ -115,9 +136,9 @@ export default function Home() {
                     <Badge variant="outline">UX &amp; Design Figma</Badge>
                   </li>
                 </ul>
-              </Card>
+              </Card></Reveal>
 
-              <Card className="p-6 bg-white/50 backdrop-blur-sm">
+              <Reveal delay={200} className="h-full"><Card className="h-full p-6 bg-white/60 backdrop-blur-sm transition-shadow duration-300 hover:shadow-lg">
                 <h3 className="text-xl font-semibold mb-4">Développement Web</h3>
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2">
@@ -133,7 +154,7 @@ export default function Home() {
                     <Badge variant="outline">Certifié Le Wagon (2024)</Badge>
                   </li>
                 </ul>
-              </Card>
+              </Card></Reveal>
             </div>
           </div>
         </section>
@@ -141,95 +162,115 @@ export default function Home() {
         {/* Experience Section */}
         <section id="experience" className="py-24 bg-muted">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-12 text-center">Parcours</h2>
+            <Reveal>
+              <h2 className="text-3xl font-bold mb-12 text-center">Parcours</h2>
+            </Reveal>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <ExperienceCard
-                title="SEO & GROWTH"
-                company="Accès SAP (Digisap Solutions)"
-                period="Aujourd'hui"
-                description="Acquisition B2C du leader français des coopératives de services à la personne (8 500 indépendants) : audit SEO technique complet de la plateforme de leads EntretienDeJardin.com, puis refonte intégrale du site par IA (Claude Code, CMS headless Sanity, GitHub) avec évolution vers une application à comptes utilisateurs. Pilotage SEA/ROAS et benchmark marketplace des acteurs B2C du secteur."
-                image="/images/acces-sap.webp"
-                technologies={["SEO", "Growth", "SEA", "IA", "Product"]}
-              />
+              <Reveal delay={0} className="h-full">
+                <ExperienceCard
+                  title="SEO & GROWTH"
+                  company="Accès SAP (Digisap Solutions)"
+                  period="Aujourd'hui"
+                  description="Acquisition B2C du leader français des coopératives de services à la personne (8 500 indépendants) : audit SEO technique complet de la plateforme de leads EntretienDeJardin.com, puis refonte intégrale du site par IA (Claude Code, CMS headless Sanity, GitHub) avec évolution vers une application à comptes utilisateurs. Pilotage SEA/ROAS et benchmark marketplace des acteurs B2C du secteur."
+                  image="/images/acces-sap.webp"
+                  technologies={["SEO", "Growth", "SEA", "IA", "Product"]}
+                />
+              </Reveal>
 
-              <ExperienceCard
-                title="LEAD PRODUCT MANAGER MARKETPLACE"
-                company="Digisap Solutions — CDI"
-                period="Sept. 2024 – Aujourd'hui"
-                description="Éditeur logiciel de solutions SaaS dédiées aux artisans, TPE & PME. Pilotage produit de la marketplace : discovery, roadmap, delivery et croissance."
-                image="/images/logicaps.webp"
-                technologies={["Product Management", "Marketplace", "Roadmap", "Agile"]}
-              />
+              <Reveal delay={90} className="h-full">
+                <ExperienceCard
+                  title="LEAD PRODUCT MANAGER MARKETPLACE"
+                  company="Digisap Solutions — CDI"
+                  period="Sept. 2024 – Aujourd'hui"
+                  description="Éditeur logiciel de solutions SaaS dédiées aux artisans, TPE & PME. Pilotage produit de la marketplace : discovery, roadmap, delivery et croissance."
+                  image="/images/logicaps.webp"
+                  technologies={["Product Management", "Marketplace", "Roadmap", "Agile"]}
+                />
+              </Reveal>
 
-              <ExperienceCard
-                title="HEAD OF GROWTH"
-                company="COOPLEO.care — Freelance"
-                period="Janv. 2024 – Juil. 2024"
-                description="Go-to-Market Strategy & Acquisition : trafic SEO multiplié par 22, coût d'acquisition divisé par 2. SEO, SEA, réseaux sociaux, CRM."
-                image="/images/coopleo.webp"
-                url="https://www.coopleo.care"
-                technologies={["Growth", "SEO", "Google Ads", "Clarity", "CRM"]}
-              />
+              <Reveal delay={180} className="h-full">
+                <ExperienceCard
+                  title="HEAD OF GROWTH"
+                  company="COOPLEO.care — Freelance"
+                  period="Janv. 2024 – Juil. 2024"
+                  description="Go-to-Market Strategy & Acquisition : trafic SEO multiplié par 22, coût d'acquisition divisé par 2. SEO, SEA, réseaux sociaux, CRM."
+                  image="/images/coopleo.webp"
+                  url="https://www.coopleo.care"
+                  technologies={["Growth", "SEO", "Google Ads", "Clarity", "CRM"]}
+                />
+              </Reveal>
 
-              <ExperienceCard
-                title="GROWTH & E-COMMERCE MANAGER"
-                company="Le Masque Français — CDI"
-                period="Janv. 2022 – Déc. 2023"
-                description="Vente de masques chirurgicaux — top 3 France. Pilotage du site Shopify : chiffre d'affaires porté de 1 à 5 M€ en 12 mois. Acquisition et CRO."
-                image="/images/le-masque-francais.webp"
-                url="https://getlemasquefrancais.com"
-                technologies={["Shopify", "E-commerce", "SEA", "CRO"]}
-              />
+              <Reveal delay={0} className="h-full">
+                <ExperienceCard
+                  title="GROWTH & E-COMMERCE MANAGER"
+                  company="Le Masque Français — CDI"
+                  period="Janv. 2022 – Déc. 2023"
+                  description="Vente de masques chirurgicaux — top 3 France. Pilotage du site Shopify : chiffre d'affaires porté de 1 à 5 M€ en 12 mois. Acquisition et CRO."
+                  image="/images/le-masque-francais.webp"
+                  url="https://getlemasquefrancais.com"
+                  technologies={["Shopify", "E-commerce", "SEA", "CRO"]}
+                />
+              </Reveal>
 
-              <ExperienceCard
-                title="DIGITAL CONVERSION MANAGER — CRO"
-                company="Carglass France — CDI"
-                period="Sept. 2020 – Déc. 2021"
-                description="Amélioration continue du parcours client digital : définition, implémentation et analyse des AB Tests. Optimisation de la conversion."
-                image="/images/carglass.webp"
-                url="https://www.carglass.fr"
-                technologies={["CRO", "AB Testing", "Optimizely", "Analytics"]}
-              />
+              <Reveal delay={90} className="h-full">
+                <ExperienceCard
+                  title="DIGITAL CONVERSION MANAGER — CRO"
+                  company="Carglass France — CDI"
+                  period="Sept. 2020 – Déc. 2021"
+                  description="Amélioration continue du parcours client digital : définition, implémentation et analyse des AB Tests. Optimisation de la conversion."
+                  image="/images/carglass.webp"
+                  url="https://www.carglass.fr"
+                  technologies={["CRO", "AB Testing", "Optimizely", "Analytics"]}
+                />
+              </Reveal>
 
-              <ExperienceCard
-                title="SENIOR CONSULTANT — EQUANCY"
-                company="Mission BMW"
-                period="Janv. 2017 – Août 2020"
-                description="Conseil en performance marketing & web analytics : challenge de l'agence média et coaching de l'équipe Media Digital — KPIs, analyses & reporting."
-                image="/images/bmw.webp"
-                url="https://www.bmw.fr"
-                technologies={["Media", "Analytics", "Reporting", "Conseil"]}
-              />
+              <Reveal delay={180} className="h-full">
+                <ExperienceCard
+                  title="SENIOR CONSULTANT — EQUANCY"
+                  company="Mission BMW"
+                  period="Janv. 2017 – Août 2020"
+                  description="Conseil en performance marketing & web analytics : challenge de l'agence média et coaching de l'équipe Media Digital — KPIs, analyses & reporting."
+                  image="/images/bmw.webp"
+                  url="https://www.bmw.fr"
+                  technologies={["Media", "Analytics", "Reporting", "Conseil"]}
+                />
+              </Reveal>
 
-              <ExperienceCard
-                title="SENIOR CONSULTANT — EQUANCY"
-                company="Mission Disneyland Paris"
-                period="Janv. 2017 – Août 2020"
-                description="Conseil en performance marketing & web analytics : analyse de l'expérience utilisateur et coaching de l'équipe sur les analyses UX."
-                image="/images/disney.webp"
-                url="https://www.disneylandparis.com"
-                technologies={["UX", "Content Square", "Analytics", "CRO"]}
-              />
+              <Reveal delay={0} className="h-full">
+                <ExperienceCard
+                  title="SENIOR CONSULTANT — EQUANCY"
+                  company="Mission Disneyland Paris"
+                  period="Janv. 2017 – Août 2020"
+                  description="Conseil en performance marketing & web analytics : analyse de l'expérience utilisateur et coaching de l'équipe sur les analyses UX."
+                  image="/images/disney.webp"
+                  url="https://www.disneylandparis.com"
+                  technologies={["UX", "Content Square", "Analytics", "CRO"]}
+                />
+              </Reveal>
 
-              <ExperienceCard
-                title="SENIOR CONSULTANT — EQUANCY"
-                company="Mission Nissan Europe"
-                period="Janv. 2017 – Août 2020"
-                description="Conseil en performance marketing & web analytics : management d'une équipe de 15 personnes, analyse des performances médias pour le top management."
-                image="/images/nissan.webp"
-                url="https://www.nissan.fr"
-                technologies={["Team Management", "Media", "Analytics", "IA"]}
-              />
+              <Reveal delay={90} className="h-full">
+                <ExperienceCard
+                  title="SENIOR CONSULTANT — EQUANCY"
+                  company="Mission Nissan Europe"
+                  period="Janv. 2017 – Août 2020"
+                  description="Conseil en performance marketing & web analytics : management d'une équipe de 15 personnes, analyse des performances médias pour le top management."
+                  image="/images/nissan.webp"
+                  url="https://www.nissan.fr"
+                  technologies={["Team Management", "Media", "Analytics", "IA"]}
+                />
+              </Reveal>
 
-              <ExperienceCard
-                title="E-COMMERCE MANAGER"
-                company="Swatch"
-                period="Fév. 2014 – Jan. 2017"
-                description="Responsable de la stratégie média : SEA, réseaux sociaux, CRM. Responsable du service client."
-                image="/images/swatch.webp"
-                url="https://www.swatch.com"
-                technologies={["E-commerce", "SEA", "Social Media", "CRM"]}
-              />
+              <Reveal delay={180} className="h-full">
+                <ExperienceCard
+                  title="E-COMMERCE MANAGER"
+                  company="Swatch"
+                  period="Fév. 2014 – Jan. 2017"
+                  description="Responsable de la stratégie média : SEA, réseaux sociaux, CRM. Responsable du service client."
+                  image="/images/swatch.webp"
+                  url="https://www.swatch.com"
+                  technologies={["E-commerce", "SEA", "Social Media", "CRM"]}
+                />
+              </Reveal>
             </div>
           </div>
         </section>
@@ -237,7 +278,9 @@ export default function Home() {
         {/* Formation Section */}
         <section id="formation" className="py-24">
           <div className="container mx-auto px-4 max-w-3xl">
-            <h2 className="text-3xl font-bold mb-12 text-center">Formation</h2>
+            <Reveal>
+              <h2 className="text-3xl font-bold mb-12 text-center">Formation</h2>
+            </Reveal>
             <div className="space-y-6">
               <Card className="p-6 flex items-start gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
