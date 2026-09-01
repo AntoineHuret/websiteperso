@@ -153,7 +153,7 @@ export default function Home() {
               />
 
               <ExperienceCard
-                title="PRODUCT MANAGER MARKETPLACE"
+                title="LEAD PRODUCT MANAGER MARKETPLACE"
                 company="Digisap Solutions — CDI"
                 period="Sept. 2024 – Aujourd'hui"
                 description="Éditeur logiciel de solutions SaaS dédiées aux artisans, TPE & PME. Pilotage produit de la marketplace : discovery, roadmap, delivery et croissance."

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Portfolio d'Antoine HURET, Lead Product Manager Marketplace. +10 ans d'expérience en marketing digital, e-commerce et CRO (Swatch, Nissan, Disneyland Paris, BMW, Carglass, Le Masque Français, Coopleo) et développeur web full-stack certifié Le Wagon.",
   keywords: [
     "Antoine Huret",
-    "Product Manager",
+    "Lead Product Manager",
     "Marketplace",
     "SaaS",
     "Growth",
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Antoine HURET — Lead Product Manager | Marketplace, SaaS & eCommerce",
     description:
-      "+10 ans d'expérience en marketing digital, e-commerce et CRO. Product Manager Marketplace et développeur web full-stack certifié Le Wagon.",
+      "+10 ans d'expérience en marketing digital, e-commerce et CRO. Lead Product Manager Marketplace et développeur web full-stack certifié Le Wagon.",
     url: "https://www.antoinehuret.com",
     siteName: "Antoine HURET",
     locale: "fr_FR",
