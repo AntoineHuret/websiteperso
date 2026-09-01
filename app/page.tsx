@@ -31,15 +31,19 @@ export default function Home() {
                 className="rounded-full object-cover"
               />
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance animate-fade-in-up">
-              Lead Product Manager
-              <span className="block text-primary">Marketplace, eCommerce &amp; CRO</span>
-            </h1>
-            <p className="text-xl text-muted-foreground animate-fade-in-up delay-200 text-balance">
-              +10 ans d&apos;expérience en marketing digital, e-commerce et CRO, en B2C et B2B2C — du conseil
-              (BMW, Disneyland Paris, Nissan Europe) aux annonceurs (Swatch, Carglass, Le Masque Français).
-              Aujourd&apos;hui Product Manager Marketplace chez Digisap Solutions, et développeur web
-              full-stack certifié Le Wagon (titre RNCP niveau 6).
+            <div className="space-y-4">
+              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary animate-fade-in">
+                Growth · CRO · Product
+              </p>
+              <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance animate-fade-in-up">
+                Lead Product Manager
+                <span className="block text-primary">Marketplace &amp; eCommerce</span>
+              </h1>
+            </div>
+            <p className="text-xl text-muted-foreground animate-fade-in-up delay-200 text-balance max-w-3xl mx-auto">
+              +10 ans à faire croître des produits digitaux, de BMW et Disneyland Paris à Swatch et
+              Le Masque Français. Aujourd&apos;hui Product Manager Marketplace chez Digisap Solutions
+              et développeur full-stack : je construis autant que je pilote.
             </p>
             <div className="flex flex-wrap justify-center gap-4 animate-fade-in-up delay-300">
               <Button className="bg-primary hover:bg-primary/90" size="lg" asChild>
