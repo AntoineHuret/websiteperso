@@ -168,27 +168,16 @@ export default function Home() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Reveal delay={0} className="h-full">
                 <ExperienceCard
-                  title="SEO & GROWTH"
-                  company="Accès SAP (Digisap Solutions)"
-                  period="Aujourd'hui"
-                  description="Acquisition B2C du leader français des coopératives de services à la personne (8 500 indépendants) : audit SEO technique complet de la plateforme de leads EntretienDeJardin.com, puis refonte intégrale du site par IA (Claude Code, CMS headless Sanity, GitHub) avec évolution vers une application à comptes utilisateurs. Pilotage SEA/ROAS et benchmark marketplace des acteurs B2C du secteur."
-                  image="/images/acces-sap.webp"
-                  technologies={["SEO", "Growth", "SEA", "IA", "Product"]}
-                />
-              </Reveal>
-
-              <Reveal delay={90} className="h-full">
-                <ExperienceCard
                   title="LEAD PRODUCT MANAGER MARKETPLACE"
                   company="Digisap Solutions — CDI"
                   period="Sept. 2024 – Aujourd'hui"
                   description="Éditeur logiciel de solutions SaaS dédiées aux artisans, TPE & PME. Pilotage produit de la marketplace : discovery, roadmap, delivery et croissance."
-                  image="/images/logicaps.webp"
+                  image="/images/acces-sap.webp"
                   technologies={["Product Management", "Marketplace", "Roadmap", "Agile"]}
                 />
               </Reveal>
 
-              <Reveal delay={180} className="h-full">
+              <Reveal delay={90} className="h-full">
                 <ExperienceCard
                   title="HEAD OF GROWTH"
                   company="COOPLEO.care — Freelance"
@@ -200,7 +189,7 @@ export default function Home() {
                 />
               </Reveal>
 
-              <Reveal delay={0} className="h-full">
+              <Reveal delay={180} className="h-full">
                 <ExperienceCard
                   title="GROWTH & E-COMMERCE MANAGER"
                   company="Le Masque Français — CDI"
@@ -212,7 +201,7 @@ export default function Home() {
                 />
               </Reveal>
 
-              <Reveal delay={90} className="h-full">
+              <Reveal delay={0} className="h-full">
                 <ExperienceCard
                   title="DIGITAL CONVERSION MANAGER — CRO"
                   company="Carglass France — CDI"
@@ -224,7 +213,7 @@ export default function Home() {
                 />
               </Reveal>
 
-              <Reveal delay={180} className="h-full">
+              <Reveal delay={90} className="h-full">
                 <ExperienceCard
                   title="SENIOR CONSULTANT — EQUANCY"
                   company="Mission BMW"
@@ -236,7 +225,7 @@ export default function Home() {
                 />
               </Reveal>
 
-              <Reveal delay={0} className="h-full">
+              <Reveal delay={180} className="h-full">
                 <ExperienceCard
                   title="SENIOR CONSULTANT — EQUANCY"
                   company="Mission Disneyland Paris"
@@ -248,7 +237,7 @@ export default function Home() {
                 />
               </Reveal>
 
-              <Reveal delay={90} className="h-full">
+              <Reveal delay={0} className="h-full">
                 <ExperienceCard
                   title="SENIOR CONSULTANT — EQUANCY"
                   company="Mission Nissan Europe"
@@ -260,7 +249,7 @@ export default function Home() {
                 />
               </Reveal>
 
-              <Reveal delay={180} className="h-full">
+              <Reveal delay={90} className="h-full">
                 <ExperienceCard
                   title="E-COMMERCE MANAGER"
                   company="Swatch"
