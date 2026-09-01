@@ -18,7 +18,11 @@ const Header = () => {
           <Link href="#contact" className="text-sm text-muted-foreground hover:text-foreground">
             Contact
           </Link>
-          <Button variant="outline">CV PDF</Button>
+          <Button variant="outline" asChild>
+            <a href="https://www.linkedin.com/in/antoinehuret/" target="_blank" rel="noopener noreferrer">
+              LinkedIn
+            </a>
+          </Button>
         </div>
       </nav>
     </header>

@@ -2,8 +2,9 @@ import Image from "next/image"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ArrowDown, Mail, MapPin, Phone } from "lucide-react"
+import { ArrowDown, Linkedin, Mail, MapPin } from "lucide-react"
 import Header from "@/components/Header"
+import Footer from "@/components/Footer"
 import { ExperienceCard } from "@/components/ExperienceCard"
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
       <Header />
       <main className="min-h-screen">
         {/* Hero Section */}
-        <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-20">
+        <section id="about" className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-20">
           <div className="space-y-8 max-w-4xl">
             <div className="relative w-48 h-48 mx-auto mb-8 animate-fade-in">
               <Image
@@ -29,9 +30,11 @@ export default function Home() {
             <p className="text-xl text-muted-foreground animate-fade-in-up delay-200">
               +10 ans d&apos;expérience en Growth, E-commerce et Développement Web
             </p>
-            <Button className="bg-primary hover:bg-primary/90 animate-fade-in-up delay-300" size="lg">
-              Voir mes projets
-              <ArrowDown className="ml-2 h-4 w-4" />
+            <Button className="bg-primary hover:bg-primary/90 animate-fade-in-up delay-300" size="lg" asChild>
+              <a href="#experience">
+                Voir mes projets
+                <ArrowDown className="ml-2 h-4 w-4" />
+              </a>
             </Button>
           </div>
         </section>
@@ -172,22 +175,31 @@ export default function Home() {
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-12">Contact</h2>
             <div className="flex justify-center gap-8">
-              <Button variant="outline" className="gap-2">
-                <Mail className="h-4 w-4" />
-                Email
+              <Button variant="outline" className="gap-2" asChild>
+                <a href="mailto:huretantoine@gmail.com">
+                  <Mail className="h-4 w-4" />
+                  Email
+                </a>
               </Button>
-              <Button variant="outline" className="gap-2">
-                <Phone className="h-4 w-4" />
-                Téléphone
+              <Button variant="outline" className="gap-2" asChild>
+                <a
+                  href="https://www.linkedin.com/in/antoinehuret/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Linkedin className="h-4 w-4" />
+                  LinkedIn
+                </a>
               </Button>
-              <Button variant="outline" className="gap-2">
+              <div className="inline-flex items-center gap-2 h-9 px-4 py-2 text-sm font-medium text-muted-foreground">
                 <MapPin className="h-4 w-4" />
                 Paris
-              </Button>
+              </div>
             </div>
           </div>
         </section>
       </main>
+      <Footer />
     </>
   )
 }
