@@ -32,7 +32,15 @@ export const metadata: Metadata = {
     siteName: "Antoine HURET",
     locale: "fr_FR",
     type: "website",
-    images: [{ url: "/profil.jpg", width: 400, height: 400, alt: "Antoine HURET" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Antoine HURET — Product Manager full-stack",
+    description:
+      "+10 ans en marketing digital, e-commerce et CRO. Product Manager Marketplace et développeur web full-stack.",
+  },
+  alternates: {
+    canonical: "https://www.antoinehuret.com",
   },
 }
 
