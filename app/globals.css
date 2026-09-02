@@ -38,40 +38,33 @@
     aspect-ratio: 16 / 9;
   }
 
-  @keyframes fadeIn {
+  /* Le contenu du hero reste opaque dès la première image : une animation
+     partant de opacity 0 laisse la page visuellement vide le temps qu'elle
+     se joue, ce que le Speed Index sanctionne directement. On ne déplace
+     donc que la position, sur une durée courte. */
+  @keyframes riseUp {
     from {
-      opacity: 0;
+      transform: translateY(14px);
     }
     to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
       transform: translateY(0);
     }
   }
 
   .animate-fade-in {
-    animation: fadeIn 0.6s ease-out forwards;
+    animation: riseUp 0.35s ease-out;
   }
 
   .animate-fade-in-up {
-    animation: fadeInUp 0.6s ease-out forwards;
+    animation: riseUp 0.45s ease-out;
   }
 
   .delay-200 {
-    animation-delay: 200ms;
+    animation-delay: 60ms;
   }
 
   .delay-300 {
-    animation-delay: 300ms;
+    animation-delay: 120ms;
   }
 }
 
