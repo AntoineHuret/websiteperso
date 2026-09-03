@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.antoinehuret.com"),
-  title: "Antoine HURET — Product Manager full-stack | Marketplace, SaaS & eCommerce",
+  title: "Antoine HURET — Product Manager full-stack | Marketplace, SaaS & E-commerce",
   description:
-    "Portfolio d'Antoine HURET, Lead Product Manager Marketplace. +10 ans d'expérience en marketing digital, e-commerce et CRO (Swatch, Nissan, Disneyland Paris, BMW, Carglass, Le Masque Français, Coopleo) et développeur web full-stack certifié Le Wagon.",
+    "Portfolio d’Antoine HURET, Lead Product Manager Marketplace. +10 ans d’expérience en marketing digital, e-commerce et CRO (Swatch, Nissan, Disneyland Paris, BMW, Carglass, Le Masque Français, Coopleo) et développeur web full-stack certifié Le Wagon.",
   keywords: [
     "Antoine Huret",
     "Lead Product Manager",
@@ -25,9 +25,9 @@ export const metadata: Metadata = {
     "Paris",
   ],
   openGraph: {
-    title: "Antoine HURET — Product Manager full-stack | Marketplace, SaaS & eCommerce",
+    title: "Antoine HURET — Product Manager full-stack | Marketplace, SaaS & E-commerce",
     description:
-      "+10 ans d'expérience en marketing digital, e-commerce et CRO. Lead Product Manager Marketplace et développeur web full-stack certifié Le Wagon.",
+      "+10 ans d’expérience en marketing digital, e-commerce et CRO. Lead Product Manager Marketplace et développeur web full-stack certifié Le Wagon.",
     url: "https://www.antoinehuret.com",
     siteName: "Antoine HURET",
     locale: "fr_FR",
