@@ -25,10 +25,10 @@ export default function Home() {
         {/* Hero Section */}
         <section
           id="about"
-          className="hero-glow min-h-screen flex flex-col items-center justify-center text-center px-4 py-20"
+          className="hero-glow min-h-screen flex flex-col items-center justify-center text-center px-4 py-16 sm:py-20"
         >
-          <div className="space-y-8 max-w-4xl">
-            <div className="avatar-ring relative w-44 h-44 mx-auto mb-8 rounded-full p-1 shadow-xl shadow-primary/20 animate-fade-in">
+          <div className="space-y-6 sm:space-y-8 max-w-4xl">
+            <div className="avatar-ring relative w-36 h-36 sm:w-44 sm:h-44 mx-auto mb-8 rounded-full p-1 shadow-xl shadow-primary/20 animate-fade-in">
               <Image
                 src="/profil.jpg"
                 alt="Antoine HURET"
@@ -39,15 +39,15 @@ export default function Home() {
               />
             </div>
             <div className="space-y-4">
-              <p className="text-sm font-semibold uppercase tracking-[0.25em] text-primary animate-fade-in">
+              <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] sm:tracking-[0.25em] text-primary animate-fade-in">
                 Acquisition · Conversion · Rétention
               </p>
-              <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-balance animate-fade-in-up">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-balance animate-fade-in-up">
                 Product Manager
                 <span className="block text-primary">full-stack</span>
               </h1>
             </div>
-            <p className="text-xl text-muted-foreground animate-fade-in-up delay-200 text-pretty max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg md:text-xl text-muted-foreground animate-fade-in-up delay-200 text-pretty max-w-3xl mx-auto">
               Je couvre l&apos;acquisition, le produit, la data et le code. +10 ans à faire grandir des
               produits digitaux — BMW, Disneyland Paris, Swatch, Carglass. Aujourd&apos;hui chez Digisap
               Solutions, je pilote la marketplace et sa croissance.
@@ -77,13 +77,13 @@ export default function Home() {
         </section>
 
         {/* Chiffres clés */}
-        <section className="py-16 bg-muted">
+        <section className="py-12 sm:py-16 bg-muted">
           <div className="container mx-auto px-4">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
               {stats.map((stat, i) => (
                 <Reveal key={stat.value} delay={i * 90}>
                   <div className="text-center space-y-2">
-                    <p className="text-4xl font-bold text-primary">{stat.value}</p>
+                    <p className="text-3xl sm:text-4xl font-bold text-primary">{stat.value}</p>
                     <p className="text-sm text-muted-foreground text-balance">{stat.label}</p>
                   </div>
                 </Reveal>
@@ -93,10 +93,10 @@ export default function Home() {
         </section>
 
         {/* Expertise Section */}
-        <section className="py-24">
+        <section className="py-16 sm:py-24">
           <div className="container mx-auto px-4">
             <Reveal>
-              <h2 className="text-3xl font-bold mb-12 text-center">Expertises</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center">Expertises</h2>
             </Reveal>
             <div className="grid md:grid-cols-3 gap-8">
               <Reveal className="h-full"><Card className="h-full p-6 bg-white/60 backdrop-blur-sm transition-shadow duration-300 hover:shadow-lg">
@@ -160,10 +160,10 @@ export default function Home() {
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="py-24 bg-muted">
+        <section id="experience" className="py-16 sm:py-24 bg-muted">
           <div className="container mx-auto px-4">
             <Reveal>
-              <h2 className="text-3xl font-bold mb-12 text-center">Parcours</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center">Parcours</h2>
             </Reveal>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               <Reveal delay={0} className="h-full">
@@ -265,10 +265,10 @@ export default function Home() {
         </section>
 
         {/* Formation Section */}
-        <section id="formation" className="py-24">
+        <section id="formation" className="py-16 sm:py-24">
           <div className="container mx-auto px-4 max-w-3xl">
             <Reveal>
-              <h2 className="text-3xl font-bold mb-12 text-center">Formation</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center">Formation</h2>
             </Reveal>
             <div className="space-y-6">
               <Card className="p-6 flex items-start gap-4">
@@ -313,7 +313,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-24 bg-muted">
+        <section id="contact" className="py-16 sm:py-24 bg-muted">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold mb-6">Contact</h2>
             <p className="text-muted-foreground mb-12 max-w-xl mx-auto text-balance">
