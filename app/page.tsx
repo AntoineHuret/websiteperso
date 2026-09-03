@@ -11,10 +11,10 @@ import Reveal from "@/components/Reveal"
 const domains = ["SaaS", "E-commerce", "Marketplace"]
 
 const stats = [
-  { value: "+10 ans", label: "d'expérience digitale" },
+  { value: "+10 ans", label: "d’expérience digitale" },
   { value: "1 → 5 M€", label: "de CA e-commerce en 12 mois (Le Masque Français)" },
   { value: "×22", label: "de croissance SEO (Coopleo)" },
-  { value: "−50 %", label: "de coût d'acquisition client (Coopleo)" },
+  { value: "−50 %", label: "de coût d’acquisition client (Coopleo)" },
 ]
 
 export default function Home() {
@@ -48,8 +48,8 @@ export default function Home() {
               </h1>
             </div>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground animate-fade-in-up delay-200 text-pretty max-w-3xl mx-auto">
-              Je couvre l&apos;acquisition, le produit, la data et le code. +10 ans à faire grandir des
-              produits digitaux — BMW, Disneyland Paris, Swatch, Carglass. Aujourd&apos;hui chez Digisap
+              Je couvre l’acquisition, le produit, la data et le code. +10 ans à faire grandir des
+              produits digitaux — BMW, Disneyland Paris, Swatch, Carglass. Aujourd’hui chez Digisap
               Solutions, je pilote la marketplace et sa croissance.
             </p>
             <ul className="flex flex-wrap justify-center gap-3 animate-fade-in-up delay-200">
@@ -109,10 +109,10 @@ export default function Home() {
                     <Badge variant="outline">SEO / SEA</Badge>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Badge variant="outline">E-Commerce</Badge>
+                    <Badge variant="outline">E-commerce</Badge>
                   </li>
                   <li className="flex items-center gap-2">
-                    <Badge variant="outline">CRO &amp; AB Testing (Optimizely)</Badge>
+                    <Badge variant="outline">CRO &amp; A/B testing (Optimizely)</Badge>
                   </li>
                   <li className="flex items-center gap-2">
                     <Badge variant="outline">Analytics &amp; Tracking (GTM)</Badge>
@@ -170,7 +170,7 @@ export default function Home() {
                 <ExperienceCard
                   title="LEAD PRODUCT MANAGER MARKETPLACE"
                   company="Digisap Solutions — CDI"
-                  period="Sept. 2024 – Aujourd'hui"
+                  period="Sept. 2024 – Aujourd’hui"
                   description="Éditeur logiciel de solutions SaaS dédiées aux artisans, TPE & PME. Pilotage produit de la marketplace : discovery, roadmap, delivery et croissance."
                   image="/images/acces-sap.webp"
                   technologies={["Product Management", "Marketplace", "Roadmap", "Agile"]}
@@ -182,7 +182,7 @@ export default function Home() {
                   title="HEAD OF GROWTH"
                   company="COOPLEO.care — Freelance"
                   period="Janv. 2024 – Juil. 2024"
-                  description="Go-to-Market Strategy & Acquisition : trafic SEO multiplié par 22, coût d'acquisition divisé par 2. SEO, SEA, réseaux sociaux, CRM."
+                  description="Go-to-Market Strategy & Acquisition : trafic SEO multiplié par 22, coût d’acquisition divisé par 2. SEO, SEA, réseaux sociaux, CRM."
                   image="/images/coopleo.webp"
                   url="https://www.coopleo.care"
                   technologies={["Growth", "SEO", "Google Ads", "Clarity", "CRM"]}
@@ -194,7 +194,7 @@ export default function Home() {
                   title="GROWTH & E-COMMERCE MANAGER"
                   company="Le Masque Français — CDI"
                   period="Janv. 2022 – Déc. 2023"
-                  description="Vente de masques chirurgicaux — top 3 France. Pilotage du site Shopify : chiffre d'affaires porté de 1 à 5 M€ en 12 mois. Acquisition et CRO."
+                  description="Vente de masques chirurgicaux — top 3 France. Pilotage du site Shopify : chiffre d’affaires porté de 1 à 5 M€ en 12 mois. Acquisition et CRO."
                   image="/images/le-masque-francais.webp"
                   url="https://getlemasquefrancais.com"
                   technologies={["Shopify", "E-commerce", "SEA", "CRO"]}
@@ -206,10 +206,10 @@ export default function Home() {
                   title="DIGITAL CONVERSION MANAGER — CRO"
                   company="Carglass France — CDI"
                   period="Sept. 2020 – Déc. 2021"
-                  description="Amélioration continue du parcours client digital : définition, implémentation et analyse des AB Tests. Optimisation de la conversion."
+                  description="Amélioration continue du parcours client digital : définition, implémentation et analyse des A/B tests. Optimisation de la conversion."
                   image="/images/carglass.webp"
                   url="https://www.carglass.fr"
-                  technologies={["CRO", "AB Testing", "Optimizely", "Analytics"]}
+                  technologies={["CRO", "A/B testing", "Optimizely", "Analytics"]}
                 />
               </Reveal>
 
@@ -218,7 +218,7 @@ export default function Home() {
                   title="SENIOR CONSULTANT — EQUANCY"
                   company="Mission BMW"
                   period="Janv. 2017 – Août 2020"
-                  description="Conseil en performance marketing & web analytics : challenge de l'agence média et coaching de l'équipe Media Digital — KPIs, analyses & reporting."
+                  description="Conseil en performance marketing & web analytics : challenge de l’agence média et coaching de l’équipe Media Digital — KPIs, analyses & reporting."
                   image="/images/bmw.webp"
                   url="https://www.bmw.fr"
                   technologies={["Media", "Analytics", "Reporting", "Conseil"]}
@@ -230,7 +230,7 @@ export default function Home() {
                   title="SENIOR CONSULTANT — EQUANCY"
                   company="Mission Disneyland Paris"
                   period="Janv. 2017 – Août 2020"
-                  description="Conseil en performance marketing & web analytics : analyse de l'expérience utilisateur et coaching de l'équipe sur les analyses UX."
+                  description="Conseil en performance marketing & web analytics : analyse de l’expérience utilisateur et coaching de l’équipe sur les analyses UX."
                   image="/images/disney.webp"
                   url="https://www.disneylandparis.com"
                   technologies={["UX", "Content Square", "Analytics", "CRO"]}
@@ -242,7 +242,7 @@ export default function Home() {
                   title="SENIOR CONSULTANT — EQUANCY"
                   company="Mission Nissan Europe"
                   period="Janv. 2017 – Août 2020"
-                  description="Conseil en performance marketing & web analytics : management d'une équipe de 15 personnes, analyse des performances médias pour le top management."
+                  description="Conseil en performance marketing & web analytics : management d’une équipe de 15 personnes, analyse des performances médias pour le top management."
                   image="/images/nissan.webp"
                   url="https://www.nissan.fr"
                   technologies={["Team Management", "Media", "Analytics", "IA"]}
@@ -253,7 +253,7 @@ export default function Home() {
                 <ExperienceCard
                   title="E-COMMERCE MANAGER"
                   company="Swatch"
-                  period="Fév. 2014 – Jan. 2017"
+                  period="Fév. 2014 – Janv. 2017"
                   description="Responsable de la stratégie média : SEA, réseaux sociaux, CRM. Responsable du service client."
                   image="/images/swatch.webp"
                   url="https://www.swatch.com"
@@ -279,8 +279,8 @@ export default function Home() {
                   <h3 className="text-xl font-semibold">Développeur Web Full-Stack</h3>
                   <p className="text-muted-foreground">Le Wagon Paris (batch #1510) — 2024</p>
                   <p className="text-sm text-muted-foreground mt-2">
-                    Ruby on Rails, API, JavaScript, PostgreSQL. Titre RNCP niveau 6 « Concepteur -
-                    Développeur d&apos;Applications Web » obtenu en sept. 2024.
+                    Ruby on Rails, API, JavaScript, PostgreSQL. Titre RNCP niveau 6 « Concepteur développeur d’applications »
+                    obtenu en sept. 2024.
                   </p>
                 </div>
               </Card>
@@ -292,7 +292,7 @@ export default function Home() {
                   <h3 className="text-xl font-semibold">BBA INSEEC</h3>
                   <p className="text-muted-foreground">Master, Finance — 2009 – 2013</p>
                   <p className="text-sm text-muted-foreground mt-2">
-                    1<sup>er</sup> prix du concours entrepreneurial de l&apos;INSEEC.
+                    1<sup>er</sup> prix du concours entrepreneurial de l’INSEEC.
                   </p>
                 </div>
               </Card>
@@ -303,7 +303,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-xl font-semibold">Certifications</h3>
                   <p className="text-sm text-muted-foreground mt-2">
-                    Concepteur - Développeur d&apos;Applications Web, RNCP niveau 6 (Le Wagon, 2024) ·
+                    Concepteur développeur d’applications, RNCP niveau 6 (Le Wagon, 2024) ·
                     Google Tag Manager Fundamentals (Google).
                   </p>
                 </div>
