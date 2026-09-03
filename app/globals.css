@@ -75,14 +75,17 @@
     position: relative;
   }
 
+  /* Pas de débordement horizontal : un inset négatif à gauche et à droite
+     élargissait la page de 10 % à toutes les tailles d'écran, rendant le
+     document scrollable latéralement. Le dégradé est élargi pour compenser. */
   .hero-glow::before {
     content: "";
     position: absolute;
-    inset: -20% -10%;
+    inset: -20% 0;
     z-index: -1;
     background: radial-gradient(
-      55% 45% at 50% 35%,
-      hsl(var(--primary) / 0.13),
+      75% 45% at 50% 35%,
+      hsl(var(--primary) / 0.14),
       transparent 70%
     );
     pointer-events: none;
