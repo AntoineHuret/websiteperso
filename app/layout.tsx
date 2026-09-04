@@ -8,14 +8,16 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.antoinehuret.com"),
-  // 57 caractères : Google tronque au-delà d’environ 60.
-  title: "Antoine HURET — Product Manager full-stack | Growth & CRO",
-  // 157 caractères : au-delà d’environ 155, Google coupe au milieu d’un mot.
+  // 48 caractères : Google tronque au-delà d’environ 60, l’intitulé de poste
+  // exact passe donc en entier.
+  title: "Antoine HURET — Lead Product Manager Marketplace",
+  // 154 caractères : au-delà d’environ 155, Google coupe au milieu d’un mot.
   description:
-    "Product Manager full-stack : acquisition, produit, data et code. 10 ans chez Swatch, Disneyland Paris et Carglass. Marketplace & SaaS chez Digisap Solutions.",
+    "Lead Product Manager Marketplace chez Digisap Solutions. Acquisition, produit, data, code. 10 ans de growth & CRO chez Swatch, Disneyland Paris, Carglass.",
   keywords: [
     "Antoine Huret",
     "Product Manager",
+    "Lead Product Manager",
     "Product Manager full-stack",
     "Marketplace",
     "SaaS",
@@ -28,9 +30,9 @@ export const metadata: Metadata = {
     "Paris",
   ],
   openGraph: {
-    title: "Antoine HURET — Product Manager full-stack | Growth & CRO",
+    title: "Antoine HURET — Lead Product Manager Marketplace",
     description:
-      "Product Manager full-stack : acquisition, produit, data et code. 10 ans chez Swatch, Disneyland Paris, Carglass et Le Masque Français.",
+      "Lead Product Manager Marketplace chez Digisap Solutions. Acquisition, produit, data et code — Swatch, Disneyland Paris, Carglass, Le Masque Français.",
     url: "https://www.antoinehuret.com",
     siteName: "Antoine HURET",
     locale: "fr_FR",
@@ -38,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Antoine HURET — Product Manager full-stack",
+    title: "Antoine HURET — Lead Product Manager Marketplace",
     description:
-      "Product Manager full-stack : acquisition, produit, data et code. 10 ans chez Swatch, Disneyland Paris, Carglass et Le Masque Français.",
+      "Lead Product Manager Marketplace chez Digisap Solutions. Acquisition, produit, data et code — Swatch, Disneyland Paris, Carglass, Le Masque Français.",
   },
   alternates: {
     canonical: "https://www.antoinehuret.com",
@@ -55,9 +57,9 @@ const personneJsonLd = {
   name: "Antoine Huret",
   url: "https://www.antoinehuret.com",
   image: "https://www.antoinehuret.com/profil.jpg",
-  jobTitle: "Product Manager full-stack",
+  jobTitle: "Lead Product Manager Marketplace",
   description:
-    "Product Manager full-stack : acquisition, produit, data et code. Marketplace, SaaS et e-commerce.",
+    "Lead Product Manager Marketplace chez Digisap Solutions : acquisition, produit, data et code.",
   worksFor: { "@type": "Organization", name: "Digisap Solutions" },
   address: { "@type": "PostalAddress", addressLocality: "Paris", addressCountry: "FR" },
   alumniOf: [
