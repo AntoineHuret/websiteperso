@@ -8,12 +8,15 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.antoinehuret.com"),
-  title: "Antoine HURET — Product Manager full-stack | Marketplace, SaaS & E-commerce",
+  // 57 caractères : Google tronque au-delà d’environ 60.
+  title: "Antoine HURET — Product Manager full-stack | Growth & CRO",
+  // 157 caractères : au-delà d’environ 155, Google coupe au milieu d’un mot.
   description:
-    "Portfolio d’Antoine HURET, Lead Product Manager Marketplace. +10 ans d’expérience en marketing digital, e-commerce et CRO (Swatch, Nissan, Disneyland Paris, BMW, Carglass, Le Masque Français, Coopleo) et développeur web full-stack certifié Le Wagon.",
+    "Product Manager full-stack : acquisition, produit, data et code. 10 ans chez Swatch, Disneyland Paris et Carglass. Marketplace & SaaS chez Digisap Solutions.",
   keywords: [
     "Antoine Huret",
-    "Lead Product Manager",
+    "Product Manager",
+    "Product Manager full-stack",
     "Marketplace",
     "SaaS",
     "Growth",
@@ -25,9 +28,9 @@ export const metadata: Metadata = {
     "Paris",
   ],
   openGraph: {
-    title: "Antoine HURET — Product Manager full-stack | Marketplace, SaaS & E-commerce",
+    title: "Antoine HURET — Product Manager full-stack | Growth & CRO",
     description:
-      "+10 ans d’expérience en marketing digital, e-commerce et CRO. Lead Product Manager Marketplace et développeur web full-stack certifié Le Wagon.",
+      "Product Manager full-stack : acquisition, produit, data et code. 10 ans chez Swatch, Disneyland Paris, Carglass et Le Masque Français.",
     url: "https://www.antoinehuret.com",
     siteName: "Antoine HURET",
     locale: "fr_FR",
@@ -37,11 +40,35 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Antoine HURET — Product Manager full-stack",
     description:
-      "+10 ans en marketing digital, e-commerce et CRO. Product Manager Marketplace et développeur web full-stack.",
+      "Product Manager full-stack : acquisition, produit, data et code. 10 ans chez Swatch, Disneyland Paris, Carglass et Le Masque Français.",
   },
   alternates: {
     canonical: "https://www.antoinehuret.com",
   },
+}
+
+// Données structurées : permettent à Google d’identifier la page comme le
+// profil d’une personne et de la relier à ses profils LinkedIn et GitHub.
+const personneJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Antoine Huret",
+  url: "https://www.antoinehuret.com",
+  image: "https://www.antoinehuret.com/profil.jpg",
+  jobTitle: "Product Manager full-stack",
+  description:
+    "Product Manager full-stack : acquisition, produit, data et code. Marketplace, SaaS et e-commerce.",
+  worksFor: { "@type": "Organization", name: "Digisap Solutions" },
+  address: { "@type": "PostalAddress", addressLocality: "Paris", addressCountry: "FR" },
+  alumniOf: [
+    { "@type": "EducationalOrganization", name: "Le Wagon" },
+    { "@type": "EducationalOrganization", name: "INSEEC" },
+  ],
+  knowsAbout: ["Product Management", "Marketplace", "SaaS", "E-commerce", "Growth", "CRO", "SEO"],
+  sameAs: [
+    "https://www.linkedin.com/in/antoinehuret/",
+    "https://github.com/AntoineHuret",
+  ],
 }
 
 export default function RootLayout({
@@ -52,6 +79,10 @@ export default function RootLayout({
   return (
     <html lang="fr" className="scroll-smooth">
       <body className={`${inter.className} bg-gray-50 text-gray-900`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personneJsonLd) }}
+        />
         <ScrollProgress />
         {children}
       </body>
