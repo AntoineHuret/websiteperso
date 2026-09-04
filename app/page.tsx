@@ -43,14 +43,15 @@ export default function Home() {
                 Acquisition · Conversion · Rétention
               </p>
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-balance animate-fade-in-up">
-                Product Manager
-                <span className="block text-primary">full-stack</span>
+                Lead Product Manager
+                <span className="block text-primary">Marketplace</span>
               </h1>
             </div>
             <p className="text-base sm:text-lg md:text-xl text-muted-foreground animate-fade-in-up delay-200 text-pretty max-w-3xl mx-auto">
-              Je couvre l’acquisition, le produit, la data et le code. +10 ans à faire grandir des
-              produits digitaux — BMW, Disneyland Paris, Swatch, Carglass. Aujourd’hui chez Digisap
-              Solutions, je pilote la marketplace et sa croissance.
+              Product Manager full-stack : je couvre l’acquisition, le produit, la data et le code.
+              +10 ans à faire grandir des produits digitaux — BMW, Disneyland Paris, Swatch,
+              Carglass. Aujourd’hui chez Digisap Solutions, je pilote la marketplace et sa
+              croissance.
             </p>
             <ul className="flex flex-wrap justify-center gap-3 animate-fade-in-up delay-200">
               {domains.map((domain) => (
